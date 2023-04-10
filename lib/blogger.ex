@@ -6,6 +6,10 @@ defmodule Blogger do
     HTTPoison.get(url)
   end
 
+  def to_upper_case(words) do
+    Enum.map(words, &String.upcase/1)
+  end
+
   def hello do
     :world
   end
