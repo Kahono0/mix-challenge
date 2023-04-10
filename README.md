@@ -1,21 +1,39 @@
 # Blogger
 
-**TODO: Add description**
+Blogger is a mix project that fetches a blog post from a given URL using the HTTPoison library. It also includes a function that takes in a list of strings and returns the list with all the strings in uppercase.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `blogger` to your list of dependencies in `mix.exs`:
+To run this project, you need to have Elixir installed on your machine. If you don't have Elixir installed, you can follow the instructions [here](https://elixir-lang.org/install.html).
 
-```elixir
-def deps do
-  [
-    {:blogger, "~> 0.1.0"}
-  ]
-end
+
+## Usage
+
+To run the project, clone the repo and run the following commands:
+
+```bash
+mix deps.get
+```
+The above command will install the dependencies for the project.
+
+```bash
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/blogger](https://hexdocs.pm/blogger).
+The above command will start the Elixir shell and load the project.
+
+To run fetch_blog_post/1, call the function as follows:
+
+```elixir
+Blogger.fetch_blog
+```
+
+To run the uppercase_list/1 function, call the function as follows:
+
+```elixir
+words = ["hello", "world"]
+Blogger.uppercase_list(words)
+```
+
+
 
